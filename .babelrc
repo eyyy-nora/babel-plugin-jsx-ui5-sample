@@ -1,0 +1,3 @@
+{
+  "plugins": ["@rdme/jsx-ui5", "transform-modules-ui5", "@babel/syntax-class-properties"]
+}
