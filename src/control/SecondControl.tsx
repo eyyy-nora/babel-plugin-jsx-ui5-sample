@@ -1,4 +1,5 @@
 import Control from "sap/ui/core/Control";
+
 /**
  * @name some.namespace.MyControl
  */
@@ -6,6 +7,9 @@ export default class MyControl extends Control {
 	static metadata = {
 		properties: {
 			title: { type: "string" },
+      description: {
+			  type: "string"
+      }
 		},
 		aggregations: {
 			content: { type: "sap.ui.core.Control", multiple: true },
@@ -14,7 +18,7 @@ export default class MyControl extends Control {
 		events: {
 			buttonPress: {}
 		}
-	}
+	};
 	static renderer = {
 		render(rm, control) {
 			rm.render(<div ui5control>
@@ -35,5 +39,5 @@ export default class MyControl extends Control {
 				<span>Foobar</span>
 			</div>);
 		},
-	}
+	};
 }

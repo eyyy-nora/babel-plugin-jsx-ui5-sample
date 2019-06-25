@@ -1,0 +1,13 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="io.rocketbase.example.controller.ProductList">
+  <Page title="{i18n>products.title}">
+    <List items="{/Products}">
+      <StandardListItem
+        title="{ProductName}"
+        description="{QuantityPerUnit}"
+        press="onProductItemPress"
+        type="Navigation"
+      />
+    </List>
+  </Page>
+</mvc:View>

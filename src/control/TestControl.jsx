@@ -3,6 +3,7 @@ sap.ui.define(["sap/ui/core/Control"], function(Control) {
 		metadata: {
 			properties: {
 				title: { type: "string" },
+        description: { type: "Testcontrol", defaultValue: "Bla" }
 			},
 			aggregations: {
 				content: { type: "sap.ui.core.Control", multiple: true },

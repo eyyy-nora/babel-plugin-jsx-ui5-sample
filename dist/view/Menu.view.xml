@@ -1,0 +1,8 @@
+<mvc:View
+  xmlns:mvc="sap/ui/core/mvc"
+  xmlns="sap.m"
+  controllerName="io.rocketbase.example.controller.Menu">
+  <Page title="{i18n>menu.title}">
+
+  </Page>
+</mvc:View>

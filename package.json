@@ -4,15 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel -d dist src"
+    "build": "babel -d dist src --extensions \".js,.jsx,.es6,.es,.ts,.tsx\" --copy-files",
+    "watch": "babel --watch -d dist src --extensions \".js,.jsx,.es6,.es,.ts,.tsx\" --copy-files",
+    "serve": "node serve",
+    "idea:schemas": "npx ui5-schemas --sdk openui5"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express-http-proxy": "^1.5.1"
+  },
+  "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/plugin-syntax-class-properties": "^7.2.0",
     "@rdme/babel-plugin-jsx-ui5": "^1.0.2",
-    "babel-plugin-transform-modules-ui5": "^7.0.0-rc.1"
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jquery": "^3.3.29",
+    "babel-plugin-transform-modules-ui5": "^7.0.0",
+    "ui5ts": "^0.3.2",
+    "express": "^4.16.4"
   }
 }

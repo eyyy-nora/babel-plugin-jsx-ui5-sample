@@ -1,0 +1,37 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:f="sap.ui.layout.form"
+  controllerName="io.rocketbase.example.controller.ProductDetail">
+  <Page title="{ProductName}">
+    <f:SimpleForm editable="true" layout="ResponsiveGridLayout">
+
+      <Label text="{i18n>product.id}"/>
+      <Input value="{ProductID}" editable="false"/>
+
+      <Label text="{i18n>product.name}"/>
+      <Input value="{ProductName}"/>
+
+      <Label text="{i18n>product.price}"/>
+      <StepInput value="{UnitPrice}" displayValuePrecision="2"/>
+
+      <Label text="{i18n>product.inStock}"/>
+      <StepInput value="{UnitsInStock}"/>
+
+      <Label text="{i18n>product.onOrder}"/>
+      <StepInput value="{UnitsOnOrder}"/>
+
+      <Label text="{i18n>product.quantity}"/>
+      <Input value="{QuantityPerUnit}"/>
+
+    </f:SimpleForm>
+    <footer>
+      <Toolbar>
+        <ToolbarSpacer/>
+        <Button type="Reject" press="onCancelPress" text="{i18n>action.cancel}" icon="sap-icon://cancel"/>
+        <Button type="Accept" press="onSavePress" text="{i18n>action.save}" icon="sap-icon://save"/>
+      </Toolbar>
+    </footer>
+  </Page>
+</mvc:View>
