@@ -23,6 +23,6 @@
     "@types/jquery": "^3.3.29",
     "babel-plugin-transform-modules-ui5": "^7.0.0",
     "ui5ts": "^0.3.2",
-    "express": "^4.16.4"
+    "express": "^4.17.3"
   }
 }
